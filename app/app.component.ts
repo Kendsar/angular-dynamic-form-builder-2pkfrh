@@ -12,64 +12,71 @@ export class AppComponent {
 
   public fields: any[] = [
     {
+      fieldId: 'First Name',
       type: 'text',
       name: 'firstName',
       label: 'First Name',
-      value: '',
+      row: '1',
+      column: '1',
+      defaultValue: '',
+      tab: '',
+      visibleInSynthesis: '',
       required: true,
     },
     {
+      fieldId: 'Last Name',
       type: 'text',
       name: 'lastName',
       label: 'Last Name',
-      value: '',
+      row: '1',
+      column: '2',
+      defaultValue: '',
+      tab: '',
+      visibleInSynthesis: '',
       required: true,
     },
     {
+      fieldId: 'Origin',
       type: 'text',
-      name: 'email',
-      label: 'Email',
-      value: '',
+      name: 'origin',
+      label: 'Origin',
+      row: '2',
+      column: '1',
+      defaultValue: '',
+      tab: '',
+      visibleInSynthesis: '',
       required: true,
     },
-
     {
-      type: 'file',
-      name: 'picture',
-      label: 'Picture',
-      required: true,
-      onUpload: this.onUpload.bind(this)
-    },
-    {
+      fieldId: 'Sex',
       type: 'dropdown',
-      name: 'country',
-      label: 'Country',
-      value: 'in',
+      name: 'sex',
+      label: 'Sex',
+      row: '2',
+      column: '2',
+      defaultValue: 'in',
+      tab: '',
+      visibleInSynthesis: '',
       required: true,
       options: [
-        { key: 'in', label: 'India' },
-        { key: 'us', label: 'USA' }
+        { key: 'M', label: 'Male' },
+        { key: 'F', label: 'Female' }
       ]
     },
     {
-      type: 'radio',
-      name: 'country',
-      label: 'Country',
-      value: 'in',
-      required: true,
-      options: [
-        { key: 'm', label: 'Male' },
-        { key: 'f', label: 'Female' }
-      ]
-    },
-    {
+      fieldId: 'Devise',
       type: 'checkbox',
-      name: 'hobby',
-      label: 'Hobby',
+      name: 'devise',
+      label: 'Devise',
+      row: '3',
+      column: '1',
+      defaultValue: '',
+      tab: '',
+      visibleInSynthesis: '',
       required: true,
       options: [
-        { key: 'f', label: 'Fishing' },
-        { key: 'c', label: 'Cooking' }
+        { key: 'EUR', label: 'EUR' },
+        { key: 'TND', label: 'TND' }
       ]
     }
   ];
